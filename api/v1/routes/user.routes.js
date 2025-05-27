@@ -1,8 +1,8 @@
 const {Router} = require('express');
 const router = Router(); //creamos del Routers
 
-const user_controller = require('../../controllers/userControllers');
-const user = require('../../models/user');
+const user_controller = require('../../../controllers/userControllers');
+const user = require('../../../models/user');
 
 router.get('/testUserApi', user_controller.testUserAPI);
 router.get('/', user_controller.getAllUsers);

@@ -14,7 +14,8 @@ app.use(bodyParser.urlencoded({ extended: false }));//prtmite recibir datos del 
 app.use(bodyParser.json());//permite recicbir datos en formato json
 
 //rutas de usuarios para la V1 del API
-app.use('/api/v1/users', require('./api/v1/user.routes'));//se llama la ruta de la api
+app.use('/api/v1/users', require('./api/v1/routes/user.routes'));//se llama la ruta de la api
+app.use('/api/v1/articles', require('./api/v1/routes/articles.routes'));//Rutas  para articular con la version 1 de la API
 
 //rutas de la API
 // app.get('/', (req, res) => {
