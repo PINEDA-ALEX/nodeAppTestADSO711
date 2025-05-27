@@ -7,11 +7,17 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "pineda",
+    "password": "KAJ9ws3xhkQFx1vMjEbUbmtMULHrD0qE",
+    "database": "nodejs_app_test_xpgg",
+    "host": "dpg-d0qs4k3ipnbc73emjsv0-a",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "production": {
     "username": "root",
